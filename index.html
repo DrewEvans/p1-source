@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <title>Ma Maison</title>
 </head>
 <body>
     <nav>
-        <div class="logo-container">
-            <img src="./assets/Component 16.svg" alt="ma maison logo" class="logo">
-        </div>
-        
+        <a href="index.html">
+            <div class="logo-container">
+                <img src="./assets/Component 16.svg" alt="ma maison logo" class="logo">
+            </div>
+        </a>
         <label for="search"></label>
         <input type="text" id="search" placeholder="where do you want to go?">
 
         <ul>
-            <li class="item1">Home</li>
-            <li class="item2">About</li>
+           <a href="index.html"><li class="item1">Home</li></a>
+            <a href="./pages/about.html"><li class="item2">About</li></a>
         </ul>
     </nav>
     <section>
@@ -27,7 +29,7 @@
         <div class="icon-container"><img src="./assets/fireplace-icon.svg" alt="fireplace search icon" class="search-icon"></div>
         <div class="icon-container"><img src="./assets/forest-icon.svg" alt="park search icon" class="search-icon"></div>
         <div class="icon-container"><img src="./assets/luxe-icon.svg" alt="luxury search icon" class="search-icon"></div>
-        <div class="icon-container"><img src="./assets/fireplace-icon.svg" alt="fireplace search icon" class="search-icon"></div>
+        <div class="icon-container"><img src="./assets/rollercoaster-icon.svg" alt="fireplace search icon" class="search-icon"></div>
        <button>
            <div class="filter-box">
           <div class="line">
@@ -46,36 +48,40 @@
         <hr/>
     </section>
     <main>
-        <section class="product-card">
-            <div class="product-img-container">
-                <img src="./assets/TorontoApart/photo-1580041065738-e72023775cdc.avif" alt="" class="product-img"/>
-            </div>
-            <div class="content-details">
-                <h3 class="apartment-title">2 bed luxury beach stay</h3>
-                    <span class="rating">
-                       <img src="./assets/rating-icon.svg" alt="star rating icon" class="rating-icon">  
-                       4.9
-                    </span>
-                    <br/>
-                    <p class="location">Toronto, Canada</p>
-                    <span>329 €</span>
-            </div>
-        </section>
-        <section class="product-card">
-            <div class="product-img-container">
-                <img src="./assets/TorontoApart/photo-1580041065738-e72023775cdc.avif" alt="" class="product-img"/>
-            </div>
-            <div class="content-details">
-                <h3 class="apartment-title">2 bed luxury beach stay</h3>
-                    <span class="rating">
-                       <img src="./assets/rating-icon.svg" alt="star rating icon" class="rating-icon">  
-                       4.9
-                    </span>
-                    <br/>
-                    <p class="location">Toronto, Canada</p>
-                    <span>329 €</span>
-            </div>
-        </section>
+        <a href="./pages/toronto.html">
+            <section class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/TorontoApart/photo-1580041065738-e72023775cdc.avif" alt="" class="product-img"/>
+                </div>
+                <div class="content-details">
+                    <h3 class="apartment-title">2 bed luxury apartment stay</h3>
+                        <span class="rating">
+                        <img src="./assets/rating-icon.svg" alt="star rating icon" class="rating-icon">  
+                        4.7
+                        </span>
+                        <br/>
+                        <p class="location">Toronto, Canada</p>
+                        <span>329 €</span>
+                </div>
+            </section>
+        </a>
+        <a href="./pages/iledolerion.html">
+            <section class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/FrenchCoast/photo-1528913775512-624d24b27b96.avif" alt="" class="product-img"/>
+                </div>
+                <div class="content-details">
+                    <h3 class="apartment-title">3 bed cozy beach stay</h3>
+                        <span class="rating">
+                        <img src="./assets/rating-icon.svg" alt="star rating icon" class="rating-icon">  
+                        4.9
+                        </span>
+                        <br/>
+                        <p class="location">Ile d'oleron, France</p>
+                        <span>650 €</span>
+                </div>
+            </section>
+        </a>
     </main>
 </body>
 </html>
