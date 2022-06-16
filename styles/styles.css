@@ -1,6 +1,8 @@
 html,
 body {
   font-family: Poppins;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -297,6 +299,9 @@ section > hr {
 .headline-wrapper {
   width: 800px;
 }
+.headline-wrapper > .rating {
+  margin-left: 0.25em;
+}
 .headline-wrapper > p {
   display: inline;
 }
@@ -339,6 +344,7 @@ section > hr {
 .profile-content > p {
   color: #54a3ff;
   font-size: 1.2em;
+  text-transform: capitalize;
 }
 
 .profile-content > .host-img-container {
@@ -361,13 +367,14 @@ section > hr {
 .dropdown-wrapper {
   display: flex;
   justify-content: space-between;
-  position: relative;
+  flex-wrap: wrap;
   margin-bottom: 2em;
 }
 
 .dropdown {
   display: flex;
   justify-content: space-between;
+  margin: 0.5em 0;
   padding: 0 0.5em;
   align-items: center;
   width: 600px;
@@ -381,4 +388,109 @@ section > hr {
 .icon-wrapper {
   display: flex;
   margin-bottom: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 1em;
+  }
+
+  nav {
+    align-items: flex-end;
+    height: 90px;
+  }
+
+  nav > ul {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  nav > ul > a > li {
+    font-size: 1em;
+  }
+
+  section > hr {
+    margin-top: 1em;
+    width: 100%;
+  }
+
+  .logo-container > img {
+    height: 60px;
+    align-self: flex-start;
+    content: url('../assets/mobile-logo.svg');
+  }
+
+  .search-input-container {
+    height: 40px;
+    width: 245px;
+    margin-left: 1.5em;
+  }
+
+  .search-input-container > input {
+    font-size: 11px;
+  }
+  .search-icon-container {
+    width: 100px;
+  }
+  .search-icon-container > img {
+    width: 25px;
+  }
+
+  .searchable-icon-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .searchable-icon-container {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    padding: 0.2em 0em;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .searchable-icon-container > button {
+    position: absolute;
+    left: 20px;
+    top: 255px;
+  }
+
+  .product-wrapper {
+    justify-content: start;
+    margin-top: 80px;
+  }
+
+  .product-card {
+    width: 340px;
+    display: flex;
+    margin: 0.5em 0;
+    justify-content: space-between;
+  }
+
+  .product-card > .product-img-container {
+    width: 150px;
+    height: 125px;
+  }
+
+  .content-details {
+    width: 180px;
+  }
+
+  .content-details > h3 {
+    font-size: 14px;
+  }
+  .content-details > p {
+    font-size: 12px;
+  }
+  .content-details > span {
+    font-size: 12px;
+  }
+  .product-card > .content-details > .rating {
+    position: relative;
+    transform: translate(-146px, 60px);
+  }
+  .product-card > .content-details > .price {
+    position: relative;
+    transform: translate(0px, 16px);
+  }
 }

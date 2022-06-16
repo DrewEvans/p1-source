@@ -8,3 +8,7 @@ I split my work up by page
 - Start writing my markup & giving each element respectable class Name, from top - down (nav, section, main, products).
 - I create the additional pages for product & about. 
 - I then link any product cards to their respectable pages
+- Once all anchor elements have been added I add the HTML to one of product pages
+- Next is to add the css to product page
+- copy the html from one product page to the other and update the content & images
+
