@@ -287,6 +287,10 @@ section > hr {
   margin: 0.5em 0;
 }
 
+.reserve-wrapper-2 {
+  display: hidden;
+}
+
 .total-breakdown,
 .fee-breakdown {
   margin: 0.5em;
@@ -504,5 +508,43 @@ section > hr {
 
   .reserve-wrapper {
     display: none;
+  }
+
+  .reserve-wrapper-2 {
+    display: visable;
+  }
+
+  .location-wrapper {
+    margin-top: 2em;
+  }
+
+  .location-wrapper > .headline-wrapper {
+    width: 100%;
+  }
+
+  .location-wrapper > .headline-wrapper > h1 {
+    font-size: 1.5em;
+  }
+  .location-wrapper > .headline-wrapper > p {
+    font-size: 1em;
+  }
+  .location-wrapper > .headline-wrapper > .rating {
+    float: right;
+  }
+  .location-wrapper > .headline-wrapper > .price {
+    display: none;
+  }
+
+  .location-wrapper > .img-container {
+    width: 100%;
+    height: 200px;
+  }
+
+  .location-wrapper > .host-details {
+    width: 100%;
+  }
+
+  .dropdown {
+    height: 40px;
   }
 }
