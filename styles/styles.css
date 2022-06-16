@@ -185,6 +185,7 @@ section > hr {
   font-size: 1.1m;
   display: inline-block;
   margin: 0;
+  text-transform: capitalize;
 }
 
 .content-details > .rating {
@@ -478,19 +479,30 @@ section > hr {
 
   .content-details > h3 {
     font-size: 14px;
+    white-space: nowrap;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
   }
   .content-details > p {
     font-size: 12px;
+    padding: 0;
   }
   .content-details > span {
     font-size: 12px;
   }
   .product-card > .content-details > .rating {
     position: relative;
-    transform: translate(-146px, 60px);
+    transform: translate(-146px, 76px);
   }
   .product-card > .content-details > .price {
     position: relative;
-    transform: translate(0px, 16px);
+    transform: translate(0px, 52px);
+    padding: 0;
+  }
+
+  .reserve-wrapper {
+    display: none;
   }
 }

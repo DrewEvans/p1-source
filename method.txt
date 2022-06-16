@@ -11,4 +11,5 @@ I split my work up by page
 - Once all anchor elements have been added I add the HTML to one of product pages
 - Next is to add the css to product page
 - copy the html from one product page to the other and update the content & images
+- Then we move onto the media query & make start the responsive style
 
