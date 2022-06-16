@@ -408,6 +408,30 @@ section > hr {
   margin-bottom: 1em;
 }
 
+.about-wrapper {
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-container > img {
+  width: 100%;
+}
+
+.about-container > p {
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.about-container > h3 {
+  font-size: 1.2em;
+  text-align: center;
+}
+
 @media screen and (max-width: 600px) {
   body {
     margin: 0;
