@@ -3,6 +3,10 @@ body {
   font-family: Poppins;
 }
 
+body {
+  margin: 0 2em;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -207,7 +211,7 @@ section > hr {
 .reserve-wrapper {
   position: absolute;
   padding: 1em 1.2em;
-  top: 45%;
+  top: 280px;
   left: 65%;
   width: 320px;
   height: 410px;
@@ -290,7 +294,7 @@ section > hr {
   color: #000;
 }
 
-.location-wrapper {
+.headline-wrapper {
   width: 800px;
 }
 
@@ -305,13 +309,60 @@ section > hr {
   object-fit: cover;
 }
 
+.host-details {
+  margin-top: 1em;
+  width: 500px;
+}
+
+.host-content > h3 {
+  text-transform: capitalize;
+}
+
+.host-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-content {
+  display: flex;
+}
+
+.profile-content > p {
+  color: #54a3ff;
+  font-size: 1.2em;
+}
+
+.profile-content > .host-img-container {
+  height: 64px;
+  width: 64px;
+  margin-left: 1em;
+}
+
+.profile-content > .host-img-container > img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.host-details > hr {
+  width: 100%;
+}
+
+.dropdown-wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
 .dropdown {
   display: flex;
   justify-content: space-between;
   padding: 0 0.5em;
   align-items: center;
   width: 600px;
-  height: 40px;
+  height: 60px;
   color: #fff;
   background-color: #54a3ff;
 }
